@@ -1,0 +1,25 @@
+Download power gadget from: https://software.intel.com/en-us/articles/intel-power-gadget-20
+
+Included is the version of power gadget with which this tool was built. Also the target platform was System 76 laptop which has an Intel(R) Core(TM)
+i5-4200U CPU @ 1.60GHz with 4 cores.
+
+Prior to running the tool, build power gadget
+$ cd power_gadget
+$ make
+
+Now insert the modules cpuid and msr into kernel
+$ sudo modprobe cpuid
+$ sudo modprobe msr
+
+Now run the script
+$ cd ..
+$ sudo ./xtndit.py -e 10 -s 5 -w 10 -p 12345
+
+
+sample run: 
+$ sudo ./xtndit.py -e 10 -s 5 -w 10 -p 23925 
+Predicted Battery time (minutes):
+153.833333333
+Time increases in minutes if the application is closed
+52.0647075
+
