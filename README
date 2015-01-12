@@ -1,3 +1,7 @@
+Xtndit is a simple tool to predict the effect of a process on the battery power of the laptop.
+
+Read the PDF document: Xtndit.pdf for details on the working of the tool
+
 Download power gadget from: https://software.intel.com/en-us/articles/intel-power-gadget-20
 
 Included is the version of power gadget with which this tool was built. Also the target platform was System 76 laptop which has an Intel(R) Core(TM)
